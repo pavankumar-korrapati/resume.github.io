@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title> PAVANKUMAR </title>
+
+<link rel="stylesheet" href="style3.css">
+
+</head>
+
+<body>
+
+<body>
+<style>
+div {
+  text-align: right;
+}
+</style>
+
+<div>
+<a href="about.html">About</a> 
+
+<a href="projects.html">projects</a>
+
+
+<a href="skills.html">Skills</a>
+
+
+<a href="education.html">Education</a>
+</div>
+
+<style>
+a:link{
+padding:14px;
+background-color:yellow;
+text-decoration:none;
+}
+a:hover{
+background-color:cyan;
+text-decoration:underline;
+}
+a:active{
+color:green;
+}
+
+</style>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="wallpaper1.jpg" style="width:100%">
+  <img class="mySlides" src="wallpaper2.jpg" style="width:100%">
+  <img class="mySlides" src="wallpaper3.jpg" style="width:100%">
+</section>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+
+</html>
+
+
+
